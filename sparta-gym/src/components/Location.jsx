@@ -39,7 +39,7 @@ function Location({ whatsappLink }) {
         <div className="location__map" aria-label="Mapa de Sparta Gym Olavarría">
           <iframe
             title="Sparta Gym Olavarría"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d324.29300568655386!2d-60.29981906796902!3d-36.889007808005096!2m3!1f87.2!2f48.5!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959447004244e925%3A0x3f48edd3e9a448d3!2sSPARTA%20GYM!5e1!3m2!1ses-419!2sar!4v1731000000000!5m2!1ses-419!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d324.2930057034211!2d-60.300004999999996!3d-36.889055999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959447004244e925%3A0x3f48edd3e9a448d3!2sSPARTA%20GYM!5e0!3m2!1ses-419!2sar!4v1731007200000!5m2!1ses-419!2sar"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
