@@ -14,9 +14,8 @@ function Navbar({ whatsappLink }) {
       <div className="container">
         <div className="navbar__content">
           <a href="#inicio" className="navbar__logo" aria-label="Sparta Gym Olavarría">
-            <span>Sparta</span>
-            <span>Gym</span>
-            <span>Olavarría</span>
+            <img src="/fondo-gym.jpg" alt="Logo Sparta Gym Olavarría" className="navbar__logo-image" />
+            <span className="navbar__logo-text">Sparta Gym Olavarría</span>
           </a>
           <nav className="navbar__links" aria-label="Secciones principales">
             {links.map((link) => (
