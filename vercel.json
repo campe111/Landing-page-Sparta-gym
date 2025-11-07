@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "cd sparta-gym && npm install && npm run build",
+  "installCommand": "cd sparta-gym && npm install",
+  "outputDirectory": "sparta-gym/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+
