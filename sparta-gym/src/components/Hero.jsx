@@ -9,12 +9,12 @@ function Hero({ whatsappLink }) {
           <p className="hero__eyebrow">Sparta Gym Olavarría</p>
           <h1 id="hero-heading">Transformá tu cuerpo. Entrená en Sparta.</h1>
           <p>
-            Entrenamientos funcionales, musculación y HIIT con entrenadores certificados. Sumate a la comunidad
+            Musculación, artes marciales y entrenamiento funcional con instructores certificados. Sumate a la comunidad
             que no conoce límites y conquistá tus objetivos.
           </p>
           <div className="hero__actions">
             <a className="btn btn--primary" href={whatsappLink} target="_blank" rel="noreferrer">
-              Reservá tu clase
+              Empeza Hoy
             </a>
             <a className="btn btn--ghost" href="#servicios">
               Ver servicios

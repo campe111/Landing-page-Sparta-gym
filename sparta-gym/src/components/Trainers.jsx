@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const trainers = [
   {
     name: 'Valentina Ortiz',
@@ -23,24 +25,55 @@ const trainers = [
 ]
 
 function Trainers() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const next = () => setCurrentIndex((prev) => (prev + 1) % trainers.length)
+  const prev = () => setCurrentIndex((prev) => (prev - 1 + trainers.length) % trainers.length)
+
   return (
     <section className="section section--alt" id="entrenadores" aria-labelledby="trainers-heading">
       <div className="container">
         <span className="section__eyebrow">Team Sparta</span>
         <h2 id="trainers-heading">Entrenadores que te llevan al siguiente nivel</h2>
-        <div className="grid trainers__grid">
-          {trainers.map((trainer) => (
-            <article key={trainer.name} className="card card--trainer">
-              <div className="card__media">
-                <img src={trainer.photo} alt={trainer.name} loading="lazy" />
-              </div>
-              <div className="card__body">
-                <h3>{trainer.name}</h3>
-                <p className="card__subtitle">{trainer.specialty}</p>
-                <p>{trainer.description}</p>
-              </div>
-            </article>
-          ))}
+        <div className="trainers__carousel">
+          <div className="trainers__slider">
+            <button type="button" className="trainers__control" onClick={prev} aria-label="Entrenador anterior">
+              ‹
+            </button>
+            <div className="trainers__viewport">
+              {trainers.map((trainer, index) => (
+                <article
+                  key={trainer.name}
+                  className={`card card--trainer trainers__item ${index === currentIndex ? 'is-active' : ''}`}
+                  aria-hidden={index !== currentIndex}
+                >
+                  <div className="card__media">
+                    <img src={trainer.photo} alt={trainer.name} loading="lazy" />
+                  </div>
+                  <div className="card__body">
+                    <h3>{trainer.name}</h3>
+                    <p className="card__subtitle">{trainer.specialty}</p>
+                    <p>{trainer.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <button type="button" className="trainers__control" onClick={next} aria-label="Entrenador siguiente">
+              ›
+            </button>
+          </div>
+          <div className="trainers__dots">
+            {trainers.map((trainer, index) => (
+              <button
+                key={trainer.name}
+                type="button"
+                className={`trainers__dot ${index === currentIndex ? 'is-active' : ''}`}
+                onClick={() => setCurrentIndex(index)}
+                aria-label={`Ver entrenador ${index + 1}`}
+                aria-selected={index === currentIndex}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -11,8 +11,8 @@ import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
-  const whatsappNumber = '542284676233'
-  const whatsappMessage = encodeURIComponent('Hola Sparta Gym Olavarría 👋 Quiero reservar mi clase de prueba.')
+  const whatsappNumber = '5492284586577'
+  const whatsappMessage = encodeURIComponent('Hola sparta gym Olavarria quiero empezar hoy al Gym mi nombre es..')
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
   return (

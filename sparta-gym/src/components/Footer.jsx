@@ -13,7 +13,7 @@ function Footer({ whatsappLink }) {
         <div className="footer__links">
           <div>
             <h4>Contacto</h4>
-            <a href="tel:+542284676233">+54 2284 676233</a>
+            <a href="tel:+5492284586577">+54 9 2284 58-6577</a>
             <a href="mailto:hola@spartagym.com">hola@spartagym.com</a>
             <a href={whatsappLink} target="_blank" rel="noreferrer">
               WhatsApp directo

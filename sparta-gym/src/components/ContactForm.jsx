@@ -38,8 +38,10 @@ Mensaje: ${formData.message || 'Me interesa comenzar a entrenar.'}`,
           <span className="section__eyebrow">Contacto</span>
           <h2 id="contact-heading">Coordinemos tu primera clase gratuita</h2>
           <p>
-            Completá el formulario y te respondemos desde WhatsApp en minutos. También podés escribirnos directo al
-            +54 2284 676233.
+            Completá el formulario y te respondemos desde WhatsApp en minutos. También podés escribirnos directo al{' '}
+            <a href="tel:+5492284586577" style={{ color: '#ff5252', textDecoration: 'underline' }}>
+              +54 9 2284 58-6577
+            </a>.
           </p>
         </div>
         <form className="contact__form" onSubmit={handleSubmit}>

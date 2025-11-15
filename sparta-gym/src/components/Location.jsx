@@ -21,16 +21,16 @@ function Location({ whatsappLink }) {
             </li>
             <li>
               <span>Instagram</span>
-              <a href="https://www.instagram.com/spartagymolavarria" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/sparta_gym_olavarria/" target="_blank" rel="noreferrer">
                 @SpartaGymOlavarria
               </a>
             </li>
           </ul>
           <div className="location__cta">
             <a className="btn btn--primary" href={whatsappLink} target="_blank" rel="noreferrer">
-              Reservá por WhatsApp
+              Empeza Hoy
             </a>
-            <a className="btn btn--ghost" href="tel:+542284676233">
+            <a className="btn btn--ghost" href="tel:+5492284586577">
               Llamanos ahora
             </a>
           </div>
